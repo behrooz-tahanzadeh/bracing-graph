@@ -30,6 +30,8 @@ bracingConsole.prototype.toggleRod = function(i,j)
 {
 	this.bracingArr[i][j] = !this.bracingArr[i][j];
 	this.draw();
+	
+	jQuery('#isRigid').html(this.isRigid()? 'Rigid' : 'NotRigid');
 };//eof
 
 bracingConsole.prototype.draw = function()
@@ -39,7 +41,7 @@ bracingConsole.prototype.draw = function()
 
 bracingConsole.prototype.isRigid = function()
 {
-	
+	return Checker.isRigid(this);
 };
 
 
