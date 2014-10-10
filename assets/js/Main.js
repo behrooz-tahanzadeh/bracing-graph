@@ -9,11 +9,11 @@ Main =
 	{
 		GBracing.canvas	= jQuery('#bracingDrawingArea').get(0);
 		GBracing.ctx	= jQuery('#bracingDrawingArea').get(0).getContext("2d");
-		
 		GBracing.init();
 		
-		GGraph.canvas	= jQuery('#graphDrawingArea').eq(0);
+		GGraph.canvas	= jQuery('#graphDrawingArea').get(0);
 		GGraph.ctx		= jQuery('#graphDrawingArea').get(0).getContext("2d");
+		GGraph.init();
 	},
 	
 	

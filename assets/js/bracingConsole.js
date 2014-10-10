@@ -37,25 +37,10 @@ bracingConsole.prototype.toggleRod = function(i,j)
 bracingConsole.prototype.draw = function()
 {
 	GBracing.draw(this);
+	GGraph.draw(this);
 };//eof
 
 bracingConsole.prototype.isRigid = function()
 {
 	return Checker.isRigid(this);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
