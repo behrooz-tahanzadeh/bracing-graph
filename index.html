@@ -3,13 +3,37 @@ layout: default
 ---
 <!-- index.html -->
 
-<canvas id="bracingDrawingArea" width="500" height="500"></canvas>
-<canvas id="graphDrawingArea" width="500" height="500"></canvas>
-
-<div class="btn" id="drawBtn" onClick="Main.drawBtnOnClick()">
-	draw
+<div class="canvasWrapper">
+	<canvas id="bracingDrawingArea" width="500" height="500"></canvas>
+	
+	<header>Bracing</header>
 </div>
-<input id="rowsNumber" type="number" value="3"/>
-<input id="colsNumber" type="number" value="9"/>
 
-<div id="isRigid">Is it rigid?!</div>
+<div class="canvasWrapper">
+	<canvas id="graphDrawingArea" width="500" height="500"></canvas>
+	
+	<header>Graph</header>
+</div>
+
+<div id="optionPane">
+	
+	<span>Rows Number</span>
+	<input id="rowsNumber" type="number" value="1"/>
+	
+	<hr>
+	
+	<span>Columns Number</span>
+	<input id="colsNumber" type="number" value="1"/>
+	<hr>
+	
+	<div class="btn" onClick="Main.drawBtnOnClick()">Draw</div>
+	
+	<hr>
+	
+	<div id="isRigid">
+		<div>
+			<div>Not Rigid!</div>
+			<div>Rigid ;)</div>
+		</div>
+	</div>
+</div>

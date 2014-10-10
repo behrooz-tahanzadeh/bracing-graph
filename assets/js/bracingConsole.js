@@ -31,7 +31,11 @@ bracingConsole.prototype.toggleRod = function(i,j)
 	this.bracingArr[i][j] = !this.bracingArr[i][j];
 	this.draw();
 	
-	jQuery('#isRigid').html(this.isRigid()? 'Rigid' : 'NotRigid');
+	if(this.isRigid())
+		jQuery('#isRigid').addClass('yes');
+	else
+		jQuery('#isRigid').removeClass('yes');
+	
 };//eof
 
 bracingConsole.prototype.draw = function()
