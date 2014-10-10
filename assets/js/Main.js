@@ -7,8 +7,10 @@ Main =
 	
 	init:function()
 	{
-		GBracing.canvas	= jQuery('#bracingDrawingArea').eq(0);
+		GBracing.canvas	= jQuery('#bracingDrawingArea').get(0);
 		GBracing.ctx	= jQuery('#bracingDrawingArea').get(0).getContext("2d");
+		
+		GBracing.init();
 		
 		GGraph.canvas	= jQuery('#graphDrawingArea').eq(0);
 		GGraph.ctx		= jQuery('#graphDrawingArea').get(0).getContext("2d");
@@ -43,6 +45,13 @@ Main =
 			console.log(e.keyCode);
 		}
 	},
+	
+	
+	drawBtnOnClick: function()
+	{
+		Main.bracingConsole = new bracingConsole(parseInt(jQuery('input#rowsNumber').val()), parseInt(jQuery('input#colsNumber').val()));
+		Main.bracingConsole.draw();
+	}
 	
 };//eo Main{}
 
