@@ -1,0 +1,7 @@
+- src: "assets/js/jquery.min.js"
+- src: "assets/js/Keyboard.js"
+- src: "assets/js/GBracing.js"
+- src: "assets/js/GGraph.js"
+- src: "assets/js/Keyboard.js"
+- src: "assets/js/bracingConsole.js"
+- src: "assets/js/Main.js"
